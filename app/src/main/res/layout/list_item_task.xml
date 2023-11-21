@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="30dp">
+    android:layout_height="50dp"
+    android:background="@color/beige">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="" />
 
     <TextView
         android:id="@+id/task_item_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/details_label"/>
+        android:text="@string/details_label"
+        style="@style/TextAppearance1"/>
 
     <TextView
         android:id="@+id/task_item_date"
+        android:text="@string/details_label"
+        style="@style/TextAppearance1"/>
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/details_label"/>
+        app:srcCompat="@drawable/ic_house"
+        tools:srcCompat="@drawable/ic_house"
+        android:padding="@dimen/task_item_padding"/>
 
 
 </LinearLayout>
